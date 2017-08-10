@@ -1,8 +1,7 @@
-﻿<Application x:Class="DemoWPF.App"
+﻿<Application x:Class="DemoWPF.Bootstrap"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:DemoWPF"
-             StartupUri="MainWindow.xaml">
+             xmlns:local="clr-namespace:DemoWPF">
     <Application.Resources>
          
     </Application.Resources>
