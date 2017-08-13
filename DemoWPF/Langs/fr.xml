@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<lang name="Français" author="SatsuiBird">
+
+  <!-- General strings-->
+  <general>
+    <copy>Copier</copy>
+    <paste>Coller</paste>
+    <exit>Quitter</exit>
+  </general>
+
+  <main-window>
+    <menu-file>Fichier</menu-file>
+    <menu-edit>Edition</menu-edit>
+
+    <!-- Language selection -->
+    <cmb-lang-select>Langue selectionnée</cmb-lang-select>
+    <btn-translate>Traduire</btn-translate>
+    <btn-translate-tooltip>Cliquez ici pour traduire</btn-translate-tooltip>
+
+    <!-- Custom variables example -->
+    <grp-custom-vars>Exemple de variables personnalisées</grp-custom-vars>
+    <custom-vars-1>Ma première variable est : $customVar1</custom-vars-1>
+    <custom-vars-2>$customVar2 est ma seconde variable</custom-vars-2>
+
+    <!-- GetString example -->
+    <grp-getstring>Exemple de GetString</grp-getstring>
+    <btn-getstring>Cliquez moi</btn-getstring>
+
+    <!-- ContextMenu example -->
+    <grp-contextmenu>Exemple de ContextMenu</grp-contextmenu>
+    <tb-contextmenu>Clique droit pour ouvrir le ContextMenu</tb-contextmenu>
+
+    <!-- Basic controls example -->
+    <grp-basic-controls>Exemple de contrôles de base</grp-basic-controls>
+    <tb-basic>Je suis un TextBlock</tb-basic>
+    <lbl-basic>Je suis un Label</lbl-basic>
+    <btn-basic>Je suis un Button</btn-basic>
+    <chk-basic>Je suis un CheckBox</chk-basic>
+    <cmb-basic-item-1>Je suis un élément de ComboBox</cmb-basic-item-1>
+    <cmb-basic-item-2>Je suis un autre élément de ComboBox</cmb-basic-item-2>
+
+    <!-- ListView example -->
+    <grp-listview>Exemple de ListView</grp-listview>
+    <col-first>Premier</col-first>
+    <col-second>Second</col-second>
+    <col-last>Dernier</col-last>
+
+    <!-- Custom control example -->
+    <grp-custom>Exemple de contrôle personnalisé</grp-custom>
+    <ctrl-custom-property>La propriété de mon contrôle personnalisé est traduite !</ctrl-custom-property>
+    
+  </main-window>
+
+  <!-- Messages -->
+  <messages>
+    <translation-success>Fenêtre traduite avec succès !</translation-success>
+    <getstring-result>Votre message est : $p</getstring-result>
+  </messages>
+  
+</lang>

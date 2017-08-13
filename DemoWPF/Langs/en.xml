@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<lang name="English" author="SatsuiBird">
+
+  <!-- General strings-->
+  <general>
+    <copy>Copy</copy>
+    <paste>Paste</paste>
+    <exit>Exit</exit>
+  </general>
+
+  <main-window>
+    <menu-file>File</menu-file>
+    <menu-edit>Edit</menu-edit>
+    
+    <!-- Language selection -->
+    <cmb-lang-select>Selected lang</cmb-lang-select>
+    <btn-translate>Translate</btn-translate>
+    <btn-translate-tooltip>Click here to translate</btn-translate-tooltip>
+
+    <!-- Custom variables example -->
+    <grp-custom-vars>Custom variables example</grp-custom-vars>
+    <custom-vars-1>My first variable is : $customVar1</custom-vars-1>
+    <custom-vars-2>$customVar2 is my second variable</custom-vars-2>
+    
+    <!-- GetString example -->
+    <grp-getstring>GetString example</grp-getstring>
+    <txt-getstring>Enter a message</txt-getstring>
+    <btn-getstring>Click me</btn-getstring>
+  
+    <!-- ContextMenu example -->
+    <grp-contextmenu>ContextMenu example</grp-contextmenu>
+    <tb-contextmenu>Right click to open the ContextMenu</tb-contextmenu>
+  
+    <!-- Basic controls example -->
+    <grp-basic-controls>Basic controls example</grp-basic-controls>
+    <tb-basic>Im a TextBlock</tb-basic>
+    <lbl-basic>Im a Label</lbl-basic>
+    <btn-basic>Im a Button</btn-basic>
+    <chk-basic>Im a CheckBox</chk-basic>
+    <cmb-basic-item-1>Im a ComboBox item</cmb-basic-item-1>
+    <cmb-basic-item-2>Im another ComboBox item</cmb-basic-item-2>
+  
+    <!-- ListView example -->
+    <grp-listview>ListView example</grp-listview>
+    <col-first>First</col-first>
+    <col-second>Second</col-second>
+    <col-last>Last</col-last>
+  
+    <!-- Custom control example -->
+    <grp-custom>Custom control example</grp-custom>
+    <ctrl-custom-property>My custom control property is now translated !</ctrl-custom-property>
+  
+  </main-window>
+
+  <!-- Messages -->
+  <messages>
+    <translation-success>Window translated successfully !</translation-success>
+    <getstring-result>Your message is : $p</getstring-result>
+  </messages>
+
+</lang>

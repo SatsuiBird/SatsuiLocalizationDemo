@@ -1,0 +1,116 @@
+﻿<Window x:Class="DemoWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:ctrls="clr-namespace:DemoWPF.Controls"
+        xmlns:local="clr-namespace:DemoWPF"
+        mc:Ignorable="d"
+        Title="SatsuiLocalization - Demo - WPF" Height="400" Width="400" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="auto"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <!-- Menu example -->
+        <Menu Grid.Row="0" Grid.ColumnSpan="3" Margin="0,0,0,10">
+            <MenuItem Header="id:menu-file">
+                <!-- You can target specific elements by adding a slash at the beginning -->
+                <MenuItem x:Name="mnu_exit" 
+                          Header="id:/general/exit"
+                          Click="mnu_exit_Click"/>
+            </MenuItem>
+            <MenuItem Header="id:menu-edit">
+                <MenuItem Header="id:/general/copy"/>
+                <MenuItem Header="id:/general/paste"/>
+            </MenuItem>
+        </Menu>
+        
+        <!-- Lang selection -->
+        <TextBlock Grid.Row="1" Grid.Column="0" Margin="10" HorizontalAlignment="Right" VerticalAlignment="Center" 
+                   Text="id:cmb-lang-select :"/>
+        <ComboBox x:Name="cmbLangs" Grid.Row="1" Grid.Column="1" Margin="0,10,0,10"/>
+        <Button x:Name="btnTranslate"
+                Grid.Row="1" Grid.Column="2" Margin="10" Padding="5"
+                Content="id:btn-translate !" ToolTip="id:btn-translate-tooltip"
+                Click="btnTranslate_Click"/>
+
+        <!-- Examples -->
+        <ScrollViewer Grid.Row="2" Grid.ColumnSpan="3" Margin="10,10,10,10" VerticalScrollBarVisibility="Auto">
+            <StackPanel Margin="0">
+
+                <!-- Custom variables example -->
+                <GroupBox Header="id:grp-custom-vars :" Margin="0,0,0,0">
+                    <StackPanel Margin="10">
+                        <TextBlock Text="id:custom-vars-1"/>
+                        <TextBlock Text="id:custom-vars-2" Margin="0,5,0,0"/>
+                    </StackPanel>
+                </GroupBox>
+                
+                <!-- GetString example -->
+                <GroupBox Header="id:grp-getstring :" Margin="0,10,0,0">
+                    <StackPanel Margin="10">
+                        <TextBox x:Name="txtGetString"/>
+                        <Button x:Name="btnGetString" Margin="0,5,0,0" Padding="5" 
+                                Content="id:btn-getstring !"
+                                Click="btnGetString_Click"/>
+                    </StackPanel>
+                </GroupBox>
+
+                <!-- ContextMenu example -->
+                <GroupBox Header="id:grp-contextmenu" Margin="0,10,0,0" Padding="5">
+                    <TextBlock Padding="10" Background="Silver" TextAlignment="Center" Text="id:tb-contextmenu">
+                        <TextBlock.ContextMenu>
+                            <ContextMenu>
+                                <MenuItem Header="id:/general/copy"/>
+                                <MenuItem Header="id:/general/paste"/>
+                                <Separator/>
+                                <MenuItem Header="id:/general/exit" Click="mnu_exit_Click"/>
+                            </ContextMenu>
+                        </TextBlock.ContextMenu>
+                    </TextBlock>
+                </GroupBox>
+                
+                <!-- Basic controls example -->
+                <GroupBox Header="id:grp-basic-controls" Margin="0,10,0,0">
+                    <StackPanel Margin="5">
+                        <TextBlock Text="id:tb-basic" Margin="5"/>
+                        <Label Content="id:lbl-basic" Margin="5" Padding="0"/>
+                        <CheckBox Content="id:chk-basic" Margin="5"/>
+                        <Button Content="id:btn-basic" Margin="5"/>
+                        <ComboBox Margin="5">
+                            <ComboBoxItem Content="id:cmb-basic-item-1"/>
+                            <ComboBoxItem Content="id:cmb-basic-item-2"/>
+                        </ComboBox>
+                    </StackPanel>
+                </GroupBox>
+                
+                <!-- ListView example -->
+                <GroupBox Header="id:grp-listview" Margin="0,10,0,0">
+                    <ListView Margin="5" Height="100">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Width="70" Header="id:col-first"/>
+                                <GridViewColumn Width="70" Header="id:col-second"/>
+                                <GridViewColumn Width="70" Header="id:col-last"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                </GroupBox>
+                
+                <!-- Custom control example -->
+                <GroupBox Header="id:grp-custom" Margin="0,10,0,0">
+                    <ctrls:MyCustomControl MyCustomProperty="id:ctrl-custom-property" Margin="5"/>
+                </GroupBox>
+
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Window>
