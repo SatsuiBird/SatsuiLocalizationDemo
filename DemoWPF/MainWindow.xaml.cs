@@ -52,7 +52,7 @@ namespace DemoWPF
             else if (this.cmbLangs.SelectedIndex == 1) resource = "DemoWPF.Langs.fr.xml";
             else return;
 
-            if (!this.myLang.LoadResource("en", resource, ref error)) MessageBox.Show(error, "DemoWPF", MessageBoxButton.OK, MessageBoxImage.Exclamation); 
+            if (!this.myLang.LoadResource(resource, ref error)) MessageBox.Show(error, "DemoWPF", MessageBoxButton.OK, MessageBoxImage.Exclamation); 
             else
             {
                 this.myLang.Translate(this, "main-window");
